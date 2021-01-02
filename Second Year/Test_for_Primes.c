@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
   // Making sure the variable can handle 64 bit input
   unsigned long long int num;
   int check;
