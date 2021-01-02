@@ -11,7 +11,6 @@ int main(){
   int k=0;
   
   scanf("%d%d%d", &l, &m, &n);
-  //printf("%d,%d,%d", l,m,n);
   float lm[l][m];
   float mn[m][n];
   float product[l][n];
@@ -20,14 +19,12 @@ int main(){
   for(i = 0; i < l; i++){
     for(j = 0; j < m; j++){
       scanf("%f ", &lm[i][j]);
-      // printf("%f\t", lm[i][j]); 
     }
   }
 
   for(i = 0; i < m; i++){
     for(j = 0; j < n; j++){
       scanf("%f ", &mn[i][j]);
-      // printf("%f\t", mn[i][j]);
     }
   }
 
