@@ -52,7 +52,7 @@ int main(){
     stdev  = stdev + temp3;
   }
 
-  // finishing the standard deviation calculations then printing out values to 3 decimal places
+  // Finishing the standard deviation calculations then printing out values to 3 decimal places
   stdev =  (stdev / n);
   stdev = sqrt(stdev);
 
