@@ -50,7 +50,7 @@
     }
   }
 
-  // Main method
+  // Main Method
   int main(int argc, char **argv) {
     char number[100];
     long long int num;
