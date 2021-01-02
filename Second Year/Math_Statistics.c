@@ -1,10 +1,7 @@
-#include <stdio.h>
-#include <math.h>
-/* for two (2) bonus points, I was able to take more than 1000 inputs. All you need to do is update
-   the array to as high as you want to take in as many numbers as a computer has space to handle. */
-
 /* This program needs to be run with gcc stats.c -lm to make sure the math library is linked or else
    the square root function will not work. */
+#include <stdio.h>
+#include <math.h>
 
 int main(){
   // Assigning floats to printed numbers and int to counters (declaring and initializing)
