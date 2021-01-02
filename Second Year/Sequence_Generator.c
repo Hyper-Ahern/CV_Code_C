@@ -6,6 +6,7 @@ int main(int argc, char **argv) {
     unsigned long int i, n;
     double x;
 
+    // If there are more or less than 2 arguments print error
     if (argc != 2) {
         printf("USAGE: genseq <n>\n");
         return 1;
