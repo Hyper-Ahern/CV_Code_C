@@ -59,10 +59,5 @@ int main(){
       printf("invalid\n");
     }
   }
-
-
-
-
-
   return 0;
 }
