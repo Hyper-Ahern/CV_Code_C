@@ -1,22 +1,6 @@
 /*
- * Hyper Ahern
- *
- * 3120 -Assignent 2
- *
- * Oct 17th, 2020
- *
  * This program serves as a shell for Linux that accepts commands, executes them using a separate process, stores the
  * last 10 commands, and allows the user to see their history or choose form a previously used command.
- *
- *                            NOTE:
- * I use single letter variables because each one is used for ONLY that loop. Usually I would never name my variables a
- * single letter but in this instance, it was more efficient. I also know there is a large amount of repeated code. I
- * tried to create a function to encompass that large if statement at the bottom but after 4 hours of trying to get it
- * to work, I decided that fully functional code that is a repetitive is better than pretty looking code that doesn't
- * work. The code runs perfectly, the indentation is flawless, the variables are named appropriately, and the styling
- * is still excellent. Even though the code is lone, however, it is still efficient in terms of time complexity. I just
- * wanted you to know all this so that you wouldn't be tempted to take off marks for styling or elsewhere.
- *
  */
 
 #include <stdio.h>
@@ -776,41 +760,3 @@ int main(void){
   }
   return 0;
 }
-
-/*
- * I used the template that was given by Dr. Ye, the templates that were given by Patricia (our TA) on the tutorials,
- * and several online resources that are listed below:
- *
- * All of the given help documentation by Dr. Ye.
- *
- * https://www.youtube.com/watch?v=lQP4X3odvHE   - To learn about memory management
- *
- * https://www.youtube.com/watch?v=pB-nvbCg3yc   - To learn about array of strings and used concatenation method
- *
- * https://stackoverflow.com/questions/30065675/what-does-scanf-nc-mean    - To learn about how to scanf properly which
- * is where I got the scanf ("%[^\n]%*c", array_temp); and followed the docs to learn to parse with strtok.
- *
- * https://www.youtube.com/watch?v=a8l8PwCzw20    - To learn more about strtok being destructive and how to iterate
- * through the strtok
- *
- * https://www.cprogramming.com/tutorial/modulus.html for help with Mod math to assist with circular arrays
- *
- * https://stackoverflow.com/questions/18124794/adding-space-in-strcat#:~:text=Premise%3A%20strcat()%20is%20not%20
- * required.&text=Add%20a%20whitespace%20at%20the,concatenate%20the%20two%20strings...&text=You%20can%20try%20this.
- * for adding a space with strcat() (I took one line of code to add a space between tokens.)
- *
- * https://stackoverflow.com/questions/9147760/how-to-get-child-pid-in-c for help with child PID
- *
- * https://www.geeksforgeeks.org/strdup-strdndup-functions-c/ for help with strdup() in the create_history function.
- *
- * https://www.geeksforgeeks.org/static-variables-in-c/ & https://www.tutorialspoint.com/cprogramming/c_scope_rules.htm
- * for help with static variables in C
- *
- * https://stackoverflow.com/questions/8257714/how-to-convert-an-int-to-string-in-c#:~:text=You%20can%20use%20
- * itoa(),to%20convert%20any%20value%20beforehand.  - For help with itoi()/sprintf() (converting int to string)
- *
- * I also talked to some friends who had taken a previous iteration of the course to bounce ideas off of. They obviously
- * couldn't give me answers but their general advice about how to approach the two functions outside of the main
- * and the main if branch statement was invaluable.
- *
- */
