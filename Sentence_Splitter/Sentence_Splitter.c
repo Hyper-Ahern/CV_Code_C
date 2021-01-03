@@ -1,8 +1,4 @@
 /*
- * Hyper Ahern - B00437921
- * 3120 - Assignment 1
- * Sept 25, 2020
- *
  * This program takes in a user sentence, splits it up based on spaces, writes it to Stdout (the screen)
  * and then writes it to a file called "Output.txt"
  */
@@ -75,28 +71,3 @@ int main(){
     Split(sentence);
     Write(sentence);
 }
-
-/*
-                                      Acknowledgements and Resources Used:
- Because I was very rusty on C, I had to use a lot of external resources. I read about them and then waited 30 minutes
- before I wrote my own code to avoid plagiarism. Here is a list of online resources I used to find some of the commands
- and information I needed:
-
- https://www.quora.com/How-do-I-read-and-display-a-full-sentence-in-C#:~:text=using%20
- scanf()%3A,can%20use%20print%20the%20string.
- For reading a full line
-
- https://stackoverflow.com/questions/9210528/split-string-with-delimiters-in-c
- For learning about strtok()
-
- https://www.codingame.com/playgrounds/14213/how-to-play-with-strings-in-c/string-split
- For learning how to print out and use the delimiter
-
- https://www.programiz.com/c-programming/c-file-input-output
- For learning about outputing to a file
-
- https://stackoverflow.com/questions/32313150/array-type-char-is-not-assignable
- For learning about how arrays are not assignable and copyable in order to counteract the destructive nature of strtok()
-
- Also all the resources that were given in the assignment to refresh my C skills.
- */
