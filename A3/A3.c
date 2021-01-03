@@ -1,22 +1,7 @@
 /*
- * Hyper Ahern
- *
- * 3120 -Assignment 3
- *
- * Oct 26th, 2020
- *
  * This program takes in a text file with up to 500 integers, creates 2 threads, sends half of the original list to
  * each, sorts them in halves within each of the threads, and then sends it to a final thread to have the halves
  * merged into a final sorted array.
- *
- *                            NOTE:
- * I use single letter variables because each one is used for ONLY that loop. Usually I would never name my variables a
- * single letter but in this instance, it was more efficient. Please also note that we were allowed to use a sorting
- * algorithm and a merger algorithm that was not our own as long as we credit it. The objective of this assignment was
- * not about the sorting but instead about the pthreads. All credit is found at the bottom of the code and includes all
- * the websites and resources I used. Finally, please note that I used the same variables and the same function names
- * and the same structure as the skeleton that was given in the assignment because I was instructed to so I copied and
- * pasted it to use as a reference. I kept the built in comments as well.
  *
  */
 
@@ -180,45 +165,3 @@ void *merger(void *parameter_input){
     }
     pthread_exit(0);
 }
-
-
-/*
- * I used the template that was given by Dr. Ye, the templates that were given by Patricia (our TA) on the tutorials,
- * and several online resources that are listed below:
- *
- * All of the given help documentation by Dr. Ye.
- *
- * https://www.youtube.com/watch?v=lQP4X3odvHE   - To re- learn about memory management
- *
- * https://www.youtube.com/watch?v=pB-nvbCg3yc   - To re- learn about array of strings and used concatenation method
- *
- * https://stackoverflow.com/questions/23961147/implicit-declaration-of-function-strtok-r-wimplicit-
- * function-declaration-in - To learn about an error in strtok
- *
- * https://stackoverflow.com/questions/30065675/what-does-scanf-nc-mean    - To learn about how to scanf properly which
- * is where I got the scanf ("%[^\n]%*c", array_temp); and followed the docs to learn to parse with strtok.
- *
- * https://stackoverflow.com/questions/43102842/reading-integers-from-txt-file-in-c (I took a few lines of
- * code to assist with tokens)
- *
- * https://www.geeksforgeeks.org/static-variables-in-c/ & https://www.tutorialspoint.com/cprogramming/c_scope_rules.htm
- * for help with static variables in C
- *
- *  https://www.hegg.com/homework-help/questions-and-answers/write-multithreaded-sorting-program-c-works-follows-list-
- *  integers-divided-two-smaller-list-q34985369 -  Took a few lines of code from here and also used it, with Dr.Ye's
- *  template to think about how to approach the problem. Took time off after looking at it to avoid plagerism.
- *
- * https://stackoverflow.com/questions/8257714/how-to-convert-an-int-to-string-in-c#:~:text=You%20can%20use%20
- * itoa(),to%20convert%20any%20value%20beforehand.  - For help with atoi()/sprintf() (converting int to string)
- *
- * https://stackoverflow.com/questions/12944758/reading-integers-from-a-file-in-c - for assitance with reading files.
- *
- *https://www.youtube.com/watch?v=hiG5G2caZ38 - took a few lines of code form here to help with reading a file and using
- * strtok() on commas as a delimiter.
- *
- * https://www.random.org/integer-sets/?sets=1&num=500&min=1&max=500&commas=on&order=index&format=html&rnd=new - to get
- * 500 random numbers generated seperated by commas for testing
- *
- * https://stackoverflow.com/questions/53392304/writing-an-array-of-integers-into-a-file-using-c - for attempting to 
- * write to a file (unsuccessfully) and for a few pointers on reading files
- */
